@@ -34,7 +34,7 @@ export const SimpleExample = () => {
     )
     
 } 
-export const SetTimeoutExample = React.memo(() => {
+export const SetTimeoutExample = () => {
     const [fake, setFake] = useState(1); //[0, function(newValue){}]
     const [counter, setCounter] = useState(1); 
 
@@ -58,4 +58,4 @@ export const SetTimeoutExample = React.memo(() => {
         </>
     )
     
-}) 
+}

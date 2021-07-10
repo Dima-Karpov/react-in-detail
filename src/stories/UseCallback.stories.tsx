@@ -5,7 +5,7 @@ export default {
 }
 
 
-export const LikeUseCallback = React.memo(() => {
+export const LikeUseCallback = () => {
     console.log('LikeUseCallback');
     const [counter, setCounter] = useState(0);
     const [books, setBooks] = useState(['Reack', 'JS', 'CSS', 'HTML']);
@@ -28,7 +28,7 @@ export const LikeUseCallback = React.memo(() => {
             <Book books={newArray} addBook={memoizedAddBook} />
         </>
     )
-});
+};
 
 type BooksSecretTypeProps = {
     books: Array<string>
