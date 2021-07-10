@@ -9,7 +9,7 @@ type PropsType = {
 
 
 
-export function UncontrolledOnOff(props: PropsType) {
+export const UncontrolledOnOff = React.memo((props: PropsType) => {
 
     const [on, setOn] = useState(props.defaultOn ? props.defaultOn : false)
 
@@ -62,4 +62,4 @@ export function UncontrolledOnOff(props: PropsType) {
             <div style={indicatorStyle}></div>
         </div>
     );
-};
+});

@@ -6,7 +6,7 @@ type AccordionPropsType = {
     //   collapsedMenu: boolean
 };
 
-export function UncontrolledAccordion(props: AccordionPropsType) {
+export const UncontrolledAccordion = React.memo((props: AccordionPropsType) => {
 
 
     // const [collapsedMenu, setCollapsedMenu] = useState<boolean>(false)
@@ -27,7 +27,7 @@ export function UncontrolledAccordion(props: AccordionPropsType) {
             {!state.collapsedMenu && <AccordionBody />}
         </div>
     );
-};
+});
 
 type AccordionTitlePropsType = {
     title: string
@@ -37,13 +37,13 @@ type AccordionTitlePropsType = {
 
 }
 
-export function AccordionTitle(props: AccordionTitlePropsType) {
+export const AccordionTitle = React.memo((props: AccordionTitlePropsType) => {
     return (
         <h2 onClick={() => { props.onClick() }}>{props.title}</h2>
     );
-};
+});
 
-export function AccordionBody() {
+export const AccordionBody = React.memo(() => {
     return (
         <ul>
             <li>1</li>
@@ -51,4 +51,4 @@ export function AccordionBody() {
             <li>3</li>
         </ul>
     );
-};
+});

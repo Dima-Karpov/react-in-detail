@@ -8,9 +8,7 @@ type PropsType = {
 
 
 
-export function OnOff(props: PropsType) {
-
-
+export const OnOff = React.memo((props: PropsType) => {
 
     const onStyle = {
         width: '30px',
@@ -51,4 +49,4 @@ export function OnOff(props: PropsType) {
             <div style={indicatorStyle}></div>
         </div>
     );
-};
+});
