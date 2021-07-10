@@ -19,7 +19,7 @@ const UserSecret = (props: { users: Array<string> }) => {
     )
 };
 
-const Users = React.memo(UserSecret); // добавить
+const Users = React.memo(UserSecret); 
 
 
 
