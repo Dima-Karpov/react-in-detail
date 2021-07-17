@@ -7,7 +7,7 @@ type PropsType = {
     mode?: 'digital' | 'analog'
 }
 
-export const get2digitsString = (num: number) => num < 10 ? '0' + num : num;
+
 
 export const Clock: React.FC<PropsType> = React.memo((props) => {
 

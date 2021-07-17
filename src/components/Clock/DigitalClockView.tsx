@@ -1,5 +1,7 @@
 import React from 'react';
-import { CLockViewPorpsType, get2digitsString } from "./Clock";
+import { CLockViewPorpsType} from "./Clock";
+
+export const get2digitsString = (num: number) => num < 10 ? '0' + num : num;
 
 export const DigitalCLockView: React.FC<CLockViewPorpsType> = ({ date }) => {
 
